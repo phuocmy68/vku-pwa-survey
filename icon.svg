@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#005088" />
+      <stop offset="100%" stop-color="#002b4a" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f8fafc" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Nền ứng dụng bo góc chuẩn App Icon -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+
+  <!-- Logo VKU thu nhỏ góc trên -->
+  <path d="M 64,64 L 110,160 L 156,64 L 120,64 L 110,105 L 100,64 Z" fill="#E31B23"/>
+  <path d="M 164,64 L 134,160 L 160,160 L 175,115 L 205,160 L 230,160 L 190,100 L 225,64 L 195,64 L 172,98 Z" fill="#FFC20E"/>
+  <path d="M 238,64 L 238,135 C 238,155 250,162 268,162 C 286,162 298,155 298,135 L 298,64 L 275,64 L 275,132 C 275,142 272,146 268,146 C 264,146 261,142 261,132 L 261,64 Z" fill="#0072CE"/>
+
+  <!-- Khung Bảng Khảo Sát (Survey Board) -->
+  <g filter="url(#shadow)">
+    <rect x="116" y="150" width="280" height="310" rx="24" fill="url(#cardGrad)"/>
+    <!-- Móc kẹp giấy (Clip) -->
+    <rect x="196" y="130" width="120" height="36" rx="10" fill="#E31B23"/>
+    <circle cx="256" cy="148" r="8" fill="#FFC20E"/>
+
+    <!-- Các dòng check list khảo sát -->
+    <rect x="156" y="210" width="140" height="14" rx="7" fill="#005088"/>
+    <rect x="156" y="270" width="170" height="12" rx="6" fill="#94a3b8"/>
+    <rect x="156" y="300" width="120" height="12" rx="6" fill="#cbd5e1"/>
+    
+    <rect x="156" y="350" width="180" height="12" rx="6" fill="#94a3b8"/>
+    <rect x="156" y="380" width="140" height="12" rx="6" fill="#cbd5e1"/>
+
+    <!-- Dấu Check Vàng Đỏ hoàn thành -->
+    <circle cx="346" cy="217" r="18" fill="#10b981"/>
+    <path d="M 338 217 L 343 222 L 354 211" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+    <circle cx="346" cy="276" r="18" fill="#FFC20E"/>
+    <path d="M 338 276 L 343 281 L 354 270" stroke="#005088" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>
